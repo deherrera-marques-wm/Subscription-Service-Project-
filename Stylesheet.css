@@ -1,0 +1,46 @@
+body{
+    background-image: url("http://www.3d-wallpapers.info/wp-content/uploads/cool-3d-abstract-wallpaper.jpg");
+}
+
+nav {
+    margin: 30px auto;
+    height: 50px;
+    width: 700px;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Y5ZjZmMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f9f6f3));
+    background-image: -moz-linear-gradient(top, #ffffff 0%, #f9f6f3 100%);
+    background-image: -webkit-linear-gradient(top, #ffffff 0%, #f9f6f3 100%);
+    background-image: linear-gradient(to bottom, #ffffff 0%, #f9f6f3 100%);
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+}
+nav:after {
+    content: '';
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to right, #88ff88 0%, #88ff88 16.66667%, #88ffff 16.66667%, #88ffff 33.33333%, #ff8888 33.33333%, #ff8888 50%, #ff88ff 50%, #ff88ff 66.66667%, #8888ff 66.66667%, #8888ff 83.33333%, #ffff88 83.33333%, #ffff88 100%);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+    line-height: 45px;
+    padding: 0 15px;
+}
+nav a {
+    text-decoration: none;
+    color: #3498db;
+    transition: color .3s;
+}
+nav a:hover {
+    color: #34495e;
+}
