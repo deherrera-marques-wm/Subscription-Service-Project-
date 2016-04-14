@@ -33,5 +33,5 @@ foreach($result as $row) {
 
     <label>Email:</label>
     <input type="text" id="email" name="email" required>
-    <button type="submit" name="signup" value="1">Create Account</button>
+    <button type="submit" name="signup" value="1">Send email</button>
 </form>
