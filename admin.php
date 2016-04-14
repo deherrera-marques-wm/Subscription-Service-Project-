@@ -18,7 +18,9 @@ foreach($score as $row) {
     echo '<tr><td class="subinfo">';
     echo '<strong>first name:</strong><br/> ' . $row['first_name'] . '<br/></td>';
     echo '<td class="subinfo">';
-    echo '<strong>password:</strong><br/> ' . $row['password'] . '<br/></td></tr>';
+    echo '<strong>password:</strong><br/> ' . $row['password'] . '<br/></td>';
+    echo '<td><a href="removeaccount.php?id=' . $row['id'] . '&amp;first_name=' . $row['first_name'] . '&amp;password=' . $row['password'] . '">Remove</a>';
+    echo'</td></tr>';
     $i++;
 }
 echo '</table>';
