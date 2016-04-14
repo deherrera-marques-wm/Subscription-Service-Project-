@@ -41,7 +41,7 @@
     <h1 style="text-align: center">Create Account</h1>
     <label>First Name</label>
     <input type="text" id="firstName" name="firstName" required>
-
+    <br>
     <label>Password</label>
     <input type="password" id="password" name="pass" required>
     <br>

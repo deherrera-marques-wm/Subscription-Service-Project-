@@ -28,3 +28,10 @@ foreach($result as $row) {
 }
 
 ?>
+
+<form name="account" method="post">
+
+    <label>Email:</label>
+    <input type="text" id="email" name="email" required>
+    <button type="submit" name="signup" value="1">Create Account</button>
+</form>

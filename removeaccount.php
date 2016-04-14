@@ -7,7 +7,7 @@ require_once('authorize.php');
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Sports 4 Life - Remove an account</title>
-    <link rel="stylesheet" type="text/css" href="Stylesheet.css.css" />
+    <link rel="stylesheet" type="text/css" href="Stylesheet.css" />
 </head>
 <body>
 <h2>Sports 4 Life - Remove an account</h2>
@@ -56,7 +56,7 @@ if (isset($_POST['submit'])) {
 }
 else if (isset($id) && isset($first) && isset($password)) {
     echo '<p>Are you sure you want to delete the following account?</p>';
-    echo '<p><strong>Name: </strong>' . $first . '<br/>;
+    echo '<p><strong>Name: </strong>' . $first . '<br/>';
     echo '<form method="post" action="removeaccount.php">';
     echo '<input type="radio" name="confirm" value="Yes" /> Yes ';
     echo '<input type="radio" name="confirm" value="No" checked="checked" /> No <br/>';
