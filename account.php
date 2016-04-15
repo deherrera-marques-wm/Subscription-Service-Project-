@@ -45,6 +45,8 @@
     <label>Password</label>
     <input type="password" id="password" name="pass" required>
     <br>
+    
+    <br>
     <button type="submit" name="signup" value="1">Create Account</button>
 </form>
 <div style="text-align: center"><a href="login.php">Already have an account click here</a>

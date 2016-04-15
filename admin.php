@@ -1,4 +1,15 @@
 <?php
+
+$username = 'kobe';
+$password = 'bryant';
+if (!isset($_SERVER['PHP_AUTH_USER']) || !isset($_SERVER['PHP_AUTH_PW']) || ($_SERVER['PHP_AUTH_USER'] != $username) || ($_SERVER['PHP_AUTH_PW']) != $password) {
+    //If the username/password are incorrect send back authentication errors;
+    header('HTTP/1.1 401 Unauthorized');
+    header('WWW-Authenticate: Basic realm="Sports 4 Life"');
+    exit('<h2>Sports 4 Life</h2>Sorry, you must enter a valid user name and password to access this page');
+}
+
+session_start();
 require_once ("Connector.php");
 
 $query = "SELECT * FROM users ORDER BY first_name";

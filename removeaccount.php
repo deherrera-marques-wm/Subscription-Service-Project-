@@ -13,23 +13,14 @@
 
 require_once('admin.php');
 
-require_once('Connector.php');​
-if (isset($_GET['id']) && isset($_GET['firstName']) && isset($_GET['pass'])) {
-    // Grab the score data from the GET
-    $id = $_GET['id'];
-    $first = $_GET['firstName'];
-    $password = $_GET['pass'];
-}
-else if (isset($_POST['id']) && isset($_POST['name']) && isset($_POST['score'])) {
-    // Grab the score data from the POST
-    $id = $_POST['id'];
-    $first = $_POST['firstName'];
-    $password = $_POST['pass'];
-}
-else {
-    echo '<p class="error">Sorry, no account was specified for removal.</p>';
-}
+define('GW_UPLOADPATH', 'images/');
+define('GW_MAXFILESIZE','100000000' );
 
+
+$id = (@$_GET['id']) ? $_GET['id'] : $_POST['id'];
+$first = (@$_GET['firstName']) ? $_GET['firstName'] : $_POST['firstName'];
+$password = (@$_GET['pass']) ? $_GET['pass'] : $_POST['pass'];
+//$Pic = @$_GET['pic'];
 if (isset($_POST['submit'])) {
     if ($_POST['confirm'] == 'Yes') {
         // Delete the screen shot image file from the server
