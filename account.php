@@ -12,18 +12,20 @@
 
             global $dbh;
 
-            $stmt = $dbh->prepare("INSERT INTO users VALUES (0, :firstName, :password)");
+            $stmt = $dbh->prepare("INSERT INTO users VALUES (0, :firstName, :password, :screenshot)");
 
             $result = $stmt->execute(array(
 
                 'firstName' => $_POST['firstName'],
-                'password' => $_POST['pass']
+                'password' => $_POST['pass'],
+                'screenshot' => $_POST['screenshot']
 
             ));
 
             if($result){
                 $_SESSION["password"] = $password;
                 $_SESSION["userName"] = $username;
+               // $_SESSION["screenshot"] = $Pic;
                 $_SESSION['registered'] = 1;
                 echo "Registered.";
             }else {
@@ -45,8 +47,9 @@
     <label>Password</label>
     <input type="password" id="password" name="pass" required>
     <br>
-    
-    <br>
+    <label for="screenshot">Screenshot:</label>
+    <input type="file" id="screenshot" name="screenshot"/>
+    <hr/>
     <button type="submit" name="signup" value="1">Create Account</button>
 </form>
 <div style="text-align: center"><a href="login.php">Already have an account click here</a>
